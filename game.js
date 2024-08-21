@@ -30,7 +30,7 @@ function nToC(numb){
     }
 
     $(document).ready(function() {
-            $('#level-title').text('Level '+(++level)); // Change the text content
+            $('#level-title').text('Level '+(++level)); 
     });
     
 }
@@ -118,15 +118,15 @@ function animatePress(currentColor) {
 
     let button = $("#" + currentColor);
     button.fadeIn(500, function() {
-        // Add the pressed class and remove it after a brief period
+
         button.addClass("pressed");
         setTimeout(function() {
             button.removeClass("pressed");
-            // Optionally fade out the button or reset it
+
             button.fadeOut(500, function() {
-                // Optionally fade it back in or keep it hidden
+
                 button.fadeIn(500);
             });
-        }, 100); // Duration for the pressed effect
+        }, 100); 
     });
 }
